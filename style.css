@@ -311,12 +311,16 @@ a:hover {
 .navbar-brand img {
     max-height: 200px;
     margin: 0 5px 0 0;
-    display: inline;
+    display: inline-block;
+   /*  width: 60%; */
+   width: 175px;
+    height: auto;
 }
 
 .navbar-brand img[src$=svg] {
     min-width: 100px;
 }
+
 
 .nav-center .navbar-brand img {
     margin: 0;
@@ -325,8 +329,10 @@ a:hover {
 .navbar .nav {
     padding-top: 2px;
     margin-right: -16px;
+   
     float: right;
     z-index: 1;
+    list-style-type: none;
 }
 
 .nav > li {
@@ -373,6 +379,21 @@ a:hover {
     float: right;
     position: relative;
     z-index: 2;
+}
+
+.image-resize-mode{
+    width: 18%;
+}
+
+/* .link{
+    position: relative;
+    right: 170px;
+    padding: 20px;
+} */
+
+.nav{
+    right: 50px;
+    padding: 20px;
 }
 
 @media (min-width: 768px) {
@@ -660,11 +681,20 @@ h5,
 h6,
 p,
 label,
-.btn,
-a {
+.btn
+ {
     font-family: "helvetica";
     font-weight: 400;
     color: #333333!important;
+    text-decoration: none;
+}
+
+a{
+    color: #fff;
+}
+a:hover{
+    color: #f2f593;
+    text-decoration: underline;
 }
 
 .container {
@@ -759,10 +789,13 @@ h4 {
 
 .white {
     color: #fff!important;
+    font-size: 18px;
 }
 
 .portfolio-thumb {
     margin-bottom: 24px;
+    width: 100%;
+    height: auto;
 }
 
 .portfolio-row {
@@ -775,7 +808,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgb(84 53 37 / 96%);
     padding: 40px 40px 40px 40px;
 }
 
@@ -792,8 +825,12 @@ h4 {
     background-color: #364577;
 }
 
+.color-li{
+    color: #fff;
+}
+
 .bgc-atomic-tangerine {
-    background-color: #fb7232;
+    background-color: /* #fb7232; */#00663c
 }
 
 .tc-white {
@@ -806,6 +843,8 @@ h4 {
     border: solid 3px;
     border-style: dotted; */
 }
+
+
 
 
 
@@ -854,6 +893,8 @@ h4 {
 
 .bg-presentation {
     background-image: url("img/image-de-presentation.webp");
+    width: 100%;
+    height: auto;
 }
 
 @media (max-width: 1024px) {
@@ -876,6 +917,9 @@ h4 {
     }
     .nav-center.navbar .nav {
         max-width: 100%
+    }
+    .map{
+        width: 100;
     }
 }
 
@@ -1071,3 +1115,4 @@ h4 {
         text-align: center;
     }
 }
+
